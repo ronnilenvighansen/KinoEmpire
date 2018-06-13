@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="293.0" prefWidth="387.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kino.controller.CreateReservationController">
+   <children>
+      <TextField fx:id="phoneNumber" layoutX="7.0" layoutY="211.0" promptText="Phone Number" />
+      <Button fx:id="chooseSeatsButton" layoutX="7.0" layoutY="93.0" mnemonicParsing="false" onAction="#onChooseSeatsClicked" prefHeight="25.0" prefWidth="87.0" text="Choose Seats" />
+      <Button fx:id="cancelButton" layoutX="94.0" layoutY="254.0" mnemonicParsing="false" onAction="#onCancelButtonClicked" prefHeight="25.0" prefWidth="80.0" text="Cancel" />
+      <Button fx:id="createTicket" layoutX="7.0" layoutY="254.0" mnemonicParsing="false" onAction="#onCreateTicket" prefHeight="25.0" prefWidth="80.0" text="Create" />
+      <ComboBox fx:id="movieList" layoutX="7.0" layoutY="11.0" prefHeight="25.0" prefWidth="192.0" promptText="Choose Movie" />
+      <TableView fx:id="time" layoutX="212.0" layoutY="10.0" prefHeight="274.0" prefWidth="165.0">
+        <columns>
+          <TableColumn fx:id="screeningTime" prefWidth="165.0" text="Time" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="screeningDate" layoutX="7.0" layoutY="52.0" prefHeight="25.0" prefWidth="87.0" promptText="Date" />
+      <TextField fx:id="price" disable="true" layoutX="7.0" layoutY="168.0" promptText="Price" />
+      <Label layoutX="163.0" layoutY="172.0" text="DKK" />
+      <ComboBox fx:id="seatColumn" layoutX="7.0" layoutY="134.0" prefHeight="25.0" prefWidth="87.0" promptText="Column" />
+      <ComboBox fx:id="seatRows" layoutX="109.0" layoutY="134.0" prefHeight="25.0" prefWidth="87.0" promptText="Rows" />
+   </children>
+</AnchorPane>

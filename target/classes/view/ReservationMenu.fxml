@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="277.0" prefWidth="331.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kino.controller.ReservationMenuController">
+   <children>
+      <TextField fx:id="phoneNumber" layoutX="14.0" layoutY="22.0" prefHeight="25.0" prefWidth="180.0" promptText="Enter phone Number" />
+      <Button fx:id="findReservation" layoutX="207.0" layoutY="22.0" mnemonicParsing="false" onAction="#onFindReservationClicked" prefHeight="25.0" prefWidth="116.0" text="Find Reservation" />
+      <Button fx:id="createReservation" layoutX="207.0" layoutY="173.0" mnemonicParsing="false" onAction="#onCreateReservationClicked" text="Create Reservation" />
+      <ScrollPane layoutX="14.0" layoutY="64.0">
+         <content>
+            <TextArea fx:id="reservationInfo" editable="false" prefHeight="200.0" prefWidth="180.0" promptText="Info" wrapText="true" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="deleteReservation" layoutX="207.0" layoutY="239.0" mnemonicParsing="false" onAction="#onDeleteReservationClicked" text="Delete Reservation" />
+      <Button fx:id="payReservation" layoutX="207.0" layoutY="205.0" mnemonicParsing="false" onAction="#onPayReservationClicked" prefHeight="25.0" prefWidth="116.0" text="Pay Reservation" />
+      <Button fx:id="editMovie" layoutX="207.0" layoutY="64.0" mnemonicParsing="false" onAction="#onEditMovieClicked" prefHeight="25.0" prefWidth="116.0" text="Add/Delete Movie" />
+   </children>
+</AnchorPane>
